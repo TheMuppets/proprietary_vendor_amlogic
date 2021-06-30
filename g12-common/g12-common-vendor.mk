@@ -52,7 +52,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/bin/hw/android.hardware.oemlock@1.0-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.oemlock@1.0-service.droidlogic \
     vendor/amlogic/g12-common/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.droidlogic \
     vendor/amlogic/g12-common/proprietary/vendor/bin/hw/android.hardware.usb.gadget@1.1-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb.gadget@1.1-service.droidlogic \
-    vendor/amlogic/g12-common/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service.droidlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service.droidlogic \
     vendor/amlogic/g12-common/proprietary/vendor/bin/oemcrypto_test_aml:$(TARGET_COPY_OUT_VENDOR)/bin/oemcrypto_test_aml \
     vendor/amlogic/g12-common/proprietary/vendor/bin/remotecfg:$(TARGET_COPY_OUT_VENDOR)/bin/remotecfg \
     vendor/amlogic/g12-common/proprietary/vendor/bin/systemcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/systemcontrol \
@@ -88,7 +87,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/etc/init/android.hardware.oemlock@1.0-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.oemlock@1.0-service.droidlogic.rc \
     vendor/amlogic/g12-common/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.droidlogic.rc \
     vendor/amlogic/g12-common/proprietary/vendor/etc/init/android.hardware.usb.gadget@1.1-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget@1.1-service.droidlogic.rc \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.droidlogic.rc \
     vendor/amlogic/g12-common/proprietary/vendor/etc/init/bluetooth.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bluetooth.rc \
     vendor/amlogic/g12-common/proprietary/vendor/etc/init/dvb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dvb.rc \
     vendor/amlogic/g12-common/proprietary/vendor/etc/init/fs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fs.rc \
@@ -209,8 +207,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libthreadworker_alt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthreadworker_alt.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libtvbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtvbinder.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libvideotunnel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideotunnel.so \
-    vendor/amlogic/g12-common/proprietary/vendor/lib/libwifi-hal-aml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal-aml.so \
-    vendor/amlogic/g12-common/proprietary/vendor/lib/libwifi-hal-common-ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal-common-ext.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/mediadrm/libplayreadymediadrmplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libplayreadymediadrmplugin.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/soundfx/libavl.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libavl.so \
@@ -253,5 +249,4 @@ PRODUCT_PACKAGES += \
     android.hardware.oemlock@1.0-service.droidlogic \
     android.hardware.thermal@2.0-service.droidlogic \
     android.hardware.usb.gadget@1.1-service.droidlogic \
-    android.hardware.wifi@1.0-service.droidlogic \
     manifest_android.hardware.drm@1.3-service.widevine
