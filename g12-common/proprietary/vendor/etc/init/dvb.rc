@@ -1,0 +1,30 @@
+on boot
+    # DVB
+    chmod 0666 /dev/dvb0.frontend0
+    chmod 0666 /dev/dvb0.demux0
+    chmod 0666 /dev/dvb0.demux1
+    chmod 0666 /dev/dvb0.demux2
+    chmod 0666 /dev/dvb0.dvr0
+    chmod 0666 /dev/dvb0.dvr1
+    chmod 0666 /dev/dvb0.dvr2
+
+    chown media system /dev/dvb0.frontend0
+    chown media system /dev/dvb0.demux0
+    chown media system /dev/dvb0.demux1
+    chown media system /dev/dvb0.demux2
+    chown media system /dev/dvb0.dvr0
+    chown media system /dev/dvb0.dvr1
+    chown media system /dev/dvb0.dvr2
+
+    chown media system /sys/class/stb/demux0_source
+    chown media system /sys/class/stb/demux1_source
+    chown media system /sys/class/stb/demux2_source
+    chown media system /sys/class/stb/source
+    chown media system /sys/class/stb/asyncfifo0_source
+    chown media system /sys/class/stb/asyncfifo1_source
+    chown media system /sys/class/stb/asyncfifo0_flush_size
+    chown media system /sys/class/stb/asyncfifo1_flush_size
+    chown media system /sys/class/stb/video_pts
+    chown media system /sys/class/stb/audio_pts
+    chown media system /sys/class/stb/dsc_source
+

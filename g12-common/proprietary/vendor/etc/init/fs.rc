@@ -1,0 +1,21 @@
+on property:sys.boot_completed=1
+   # Enable ZRAM on boot_complete
+   swapon_all /vendor/etc/fstab.amlogic
+
+on fs
+    mkdir /mnt/vendor/factory 0755 root root
+    mkdir /mnt/vendor/tee 0700 system system
+    mount_all /vendor/etc/fstab.amlogic
+    setprop ro.crypto.fuse_sdcard true
+
+    restorecon_recursive /mnt/vendor/param
+
+on post-fs-data
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    # we will remap this as /storage/sdcard0 with the sdcard fuse tool
+    mkdir /data/media 0770 media_rw media_rw
+    mkdir /data/vendor/cas 0700 root root
+
+    # Set indication (checked by vold) that we have finished this action
+    setprop vold.post_fs_data_done 1

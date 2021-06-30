@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.droidlogic">
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <deny-permission name=""/>
+    </privapp-permissions>
+</permissions>

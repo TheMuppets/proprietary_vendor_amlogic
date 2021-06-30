@@ -1,0 +1,159 @@
+on init
+    #multimedia sys subsystem
+    chmod 0664 /sys/module/amvdec_*/parameters/double_write_mode
+    chown mediacodec system /sys/module/amvdec_*/parameters/double_write_mode
+
+    chmod 0664 /sys/module/amvdec_*/parameters/buffer_mode
+    chown mediacodec media /sys/module/amvdec_*/parameters/buffer_mode
+
+    chmod 0664 /sys/module/amvdec_*/parameters/buf_alloc_width
+    chown mediacodec media /sys/module/amvdec_*/parameters/buf_alloc_width
+
+    chmod 0664 /sys/module/amvdec_*/parameters/buf_alloc_height
+    chown mediacodec media /sys/module/amvdec_*/parameters/buf_alloc_height
+
+    chmod 0664 /sys/module/amvdec_h265/parameters/dynamic_buf_num_margin
+    chown mediacodec media /sys/module/amvdec_h265/parameters/dynamic_buf_num_margin
+
+    chmod 0664 /sys/module/amvdec_h264/parameters/dec_control
+    chown media system /sys/module/amvdec_h264/parameters/dec_control
+
+    chmod 0664 /sys/module/amvdec_h264/parameters/error_recovery_mode
+    chown media system /sys/module/amvdec_h264/parameters/error_recovery_mode
+
+    #video
+    chmod 0666 /sys/class/video/blackout_policy
+    chown media system /sys/class/video/blackout_policy
+
+    chmod 0666 /sys/class/video/screen_mode
+    chown media system /sys/class/video/screen_mode
+
+    chmod 0666 /sys/class/video/axis
+    chown media system /sys/class/video/axis
+
+    chmod 0666 /sys/class/video/disable_video
+    chown media system /sys/class/video/disable_video
+
+    chmod 0666 /sys/class/video/zoom
+    chown media system /sys/class/video/zoom
+
+    chmod 0666 /sys/class/video/free_keep_buffer
+    chown media system /sys/class/video/free_keep_buffer
+
+    chmod 0666 /sys/class/video/free_cma_buffer
+    chown media system /sys/class/video/free_cma_buffer
+
+    chmod 0666 /sys/class/video/crop
+    chown media system /sys/class/video/crop
+
+    #tsync
+    chmod 0664 /sys/class/tsync/pcr_recover
+    chown media system /sys/class/tsync/pcr_recover
+
+    chmod 0664 /sys/class/tsync/pts_video
+    chown media system /sys/class/tsync/pts_video
+
+    chmod 0664 /sys/class/tsync/pts_audio
+    chown mediadrm audio /sys/class/tsync/pts_audio
+
+    chmod 0666 /sys/class/tsync/pts_pcrscr
+    chown mediadrm audio /sys/class/tsync/pts_pcrscr
+
+    chmod 0666 /sys/class/tsync/event
+    chown mediadrm audio /sys/class/tsync/event
+
+    chmod 0664 /sys/class/tsync/firstapts
+    chown mediadrm audio /sys/class/tsync/firstapts
+
+    chmod 0664 /sys/class/tsync/mode
+    chown media system /sys/class/tsync/mode
+
+    chmod 0666 /sys/class/tsync/enable
+    chown media system /sys/class/tsync/enable
+
+    chmod 0664 /sys/class/tsync/av_threshold_min
+    chown media system /sys/class/tsync/av_threshold_min
+
+    chmod 0664 /sys/class/tsync/av_threshold_min
+    chown media system /sys/class/tsync/av_threshold_min
+
+    chmod 0666 /sys/class/tsync/apts_lookup
+    chown media system /sys/class/tsync/apts_lookup
+
+    chmod 0666 /sys/class/tsync/pts_latency
+    chown media system /sys/class/tsync/pts_latency
+
+    chmod 666 /sys/class/tsync/apts_lookup
+
+    #amaudio
+    chmod 0664 /sys/class/amaudio/audio_channels_mask
+    chown media system /sys/class/amaudio/audio_channels_mask
+
+    chmod 0664 /sys/class/amaudio/enable_resample
+    chown media system /sys/class/amaudio/enable_resample
+
+    chmod 0664 /sys/class/amaudio/resample_type
+    chown media system /sys/class/amaudio/resample_type
+
+    chmod 0664 /sys/class/amaudio/debug
+    chown system mediadrm /sys/class/amaudio/debug
+
+    #audio dsp
+    chmod 0664 /sys/class/audiodsp/codec_fatal_err
+    chown media system /sys/class/audiodsp/codec_fatal_err
+
+    chmod 0664 /sys/class/audiodsp/digital_codec
+    chown media system /sys/class/audiodsp/digital_codec
+
+    chmod 0664 /sys/class/audiodsp/digital_raw
+    chown system system /sys/class/audiodsp/digital_raw
+
+    chmod 0664 /sys/class/audiodsp/ac3_drc_control
+    chown system system /sys/class/audiodsp/ac3_drc_control
+
+    chmod 0664 /sys/class/audiodsp/dts_dec_control
+    chown media system /sys/class/audiodsp/dts_dec_control
+
+    #di
+    chmod 0664 /sys/module/di/parameters/det3d_en
+    chown root system /sys/module/di/parameters/det3d_en
+
+    chmod 0664 /sys/module/di/parameters/prog_proc_config
+    chown root system /sys/module/di/parameters/prog_proc_config
+
+    chmod 0664 /sys/module/di/parameters/bypass_hd
+    chown media system /sys/module/di/parameters/bypass_hd
+
+    chmod 0664 /sys/module/di/parameters/bypass_all
+    chown media system /sys/module/di/parameters/bypass_all
+
+    #dolby version
+    chmod 0666 /sys/module/amdolby_vision/parameters/dolby_vision_profile
+    chown media system /sys/module/amdolby_vision/parameters/dolby_vision_profile
+
+    chmod 0666 /sys/module/amdolby_vision/parameters/dolby_vision_level
+    chown media system /sys/module/amdolby_vision/parameters/dolby_vision_level
+
+    chmod 0664 /sys/class/display/mode
+    chown system system /sys/class/display/mode
+
+    chmod 0664 /sys/class/display/axis
+    chown system graphics /sys/class/display/axis
+
+    chmod 0664 /sys/module/ionvideo/parameters/freerun_mode
+    chown media system /sys/module/ionvideo/parameters/freerun_mode
+
+    #graphic
+    chmod 0664 /sys/class/graphics/fb0/osd_afbcd
+    chown system system /sys/class/graphics/fb0/osd_afbcd
+
+    #ppmgr
+    chmod 0664 /sys/class/ppmgr/angle
+    chown media system /sys/class/ppmgr/angle
+
+on boot
+    chmod 0664 /sys/class/mpgpu/scale_mode
+    chown media system /sys/class/mpgpu/scale_mode
+
+    chmod 0664 /sys/class/mpgpu/mpgpucmd
+    chown system system /sys/class/mpgpu/mpgpucmd
