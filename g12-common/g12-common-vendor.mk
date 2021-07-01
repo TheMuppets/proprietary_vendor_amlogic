@@ -214,11 +214,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/lib/soundfx/libhpeqwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhpeqwrapper.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/soundfx/libsrswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libsrswrapper.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/soundfx/libtreblebasswrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libtreblebasswrapper.so \
-    vendor/amlogic/g12-common/proprietary/vendor/lib/teetz/2c1a33c0-44cc-11e5-bc3b0002a5d5c51b.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/2c1a33c0-44cc-11e5-bc3b0002a5d5c51b.ta \
-    vendor/amlogic/g12-common/proprietary/vendor/lib/teetz/526fc4fc-7ee6-4a12-96e3-83da9565bce8.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/526fc4fc-7ee6-4a12-96e3-83da9565bce8.ta \
-    vendor/amlogic/g12-common/proprietary/vendor/lib/teetz/8efb1e1c-37e5-4326-a5d68c33726c7d57.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/8efb1e1c-37e5-4326-a5d68c33726c7d57.ta \
-    vendor/amlogic/g12-common/proprietary/vendor/lib/teetz/9a04f079-9840-4286-ab92e65be0885f95.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/9a04f079-9840-4286-ab92e65be0885f95.ta \
-    vendor/amlogic/g12-common/proprietary/vendor/lib/teetz/e043cde0-61d0-11e5-9c260002a5d5c51b.ta:$(TARGET_COPY_OUT_VENDOR)/lib/teetz/e043cde0-61d0-11e5-9c260002a5d5c51b.ta \
     vendor/amlogic/g12-common/proprietary/vendor/lib/vendor.amlogic.display.meson_display_ipc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.display.meson_display_ipc@1.0.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/vendor.amlogic.hardware.droidvold@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.droidvold@1.0.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/vendor.amlogic.hardware.hdmicec@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.hdmicec@1.0.so \
