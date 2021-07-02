@@ -101,3 +101,13 @@ PRODUCT_PACKAGES += \
     droidlogic-res \
     droidlogic-tv \
     droidlogic
+
+ifneq ($(TARGET_HAS_TEE),false)
+PRODUCT_COPY_FILES += \
+    vendor/amlogic/gx-common/proprietary/vendor/bin/tee-supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/tee-supplicant \
+    vendor/amlogic/gx-common/proprietary/vendor/bin/tee_preload_fw:$(TARGET_COPY_OUT_VENDOR)/bin/tee_preload_fw \
+    vendor/amlogic/gx-common/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
+    vendor/amlogic/gx-common/proprietary/vendor/lib/libsecmem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecmem.so \
+    vendor/amlogic/gx-common/proprietary/vendor/lib/libtee_load_video_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtee_load_video_fw.so \
+    vendor/amlogic/gx-common/proprietary/vendor/lib/libteec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteec.so
+endif
