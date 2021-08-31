@@ -215,7 +215,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.tvserver@1.0.so \
     vendor/amlogic/g12-common/proprietary/vendor/priv-app/droidlogic-res/lib/arm/libjniuevent.so:$(TARGET_COPY_OUT_VENDOR)/priv-app/droidlogic-res/lib/arm/libjniuevent.so \
     vendor/amlogic/g12-common/proprietary/vendor/priv-app/droidlogic-res/lib/arm/libremotecontrol_jni.so:$(TARGET_COPY_OUT_VENDOR)/priv-app/droidlogic-res/lib/arm/libremotecontrol_jni.so \
-    vendor/amlogic/g12-common/proprietary/vendor/usr/keylayout/Vendor_0001_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_0001_Product_0001.kl \
     vendor/amlogic/g12-common/proprietary/vendor/usr/keylayout/Vendor_000d_Product_3838.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_000d_Product_3838.kl \
     vendor/amlogic/g12-common/proprietary/vendor/usr/keylayout/Vendor_000d_Product_3839.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_000d_Product_3839.kl \
     vendor/amlogic/g12-common/proprietary/vendor/usr/keylayout/Vendor_005d_Product_0001.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_005d_Product_0001.kl \
