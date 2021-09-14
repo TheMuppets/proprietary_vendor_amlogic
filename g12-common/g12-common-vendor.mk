@@ -114,7 +114,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm43455c0_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm43455c0_ag.txt \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm43456c5_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm43456c5_ag.txt \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm4356a2_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm4356a2_ag.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm4359c0_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm4359c0_ag.txt \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm4339a0_ag.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm4339a0_ag.bin \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm43436b0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm43436b0.bin \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm43438a0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm43438a0.bin \
