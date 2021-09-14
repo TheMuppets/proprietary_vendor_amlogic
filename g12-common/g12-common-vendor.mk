@@ -106,6 +106,7 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/etc/tvconfig/pq/pq.db:$(TARGET_COPY_OUT_VENDOR)/etc/tvconfig/pq/pq.db \
     vendor/amlogic/g12-common/proprietary/vendor/etc/tvconfig/pq/pq_default.ini:$(TARGET_COPY_OUT_VENDOR)/etc/tvconfig/pq/pq_default.ini \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/clm_bcm43751a1_ag.blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/clm_bcm43751a1_ag.blob \
+    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm4359c0_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm4359c0_ag.txt \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm4339a0_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm4339a0_ag.txt \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm43436b0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm43436b0.txt \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm43438a0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm43438a0.txt \
