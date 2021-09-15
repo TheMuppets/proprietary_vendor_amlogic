@@ -55,22 +55,7 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/bin/remotecfg:$(TARGET_COPY_OUT_VENDOR)/bin/remotecfg \
     vendor/amlogic/g12-common/proprietary/vendor/bin/systemcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/systemcontrol \
     vendor/amlogic/g12-common/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/4343.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/4343.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/BCM20702.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM20702.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/BCM20703A2.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM20703A2.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/BCM2076.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM2076.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/BCM4330.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM4330.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/BCM4345C0.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM4345C0.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/BCM4345C5.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM4345C5.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/BCM4350.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM4350.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/BCM4354.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM4354.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/BCM4359C0.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM4359C0.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/BCM4362A1.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/BCM4362A1.hcd \
     vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/auto_pairing.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/auto_pairing.conf \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/bcm43241b4.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bcm43241b4.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/bcm43341b0.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bcm43341b0.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/bcm4335c0.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bcm4335c0.hcd \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/bcm43569a2.hcd:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bcm43569a2.hcd \
     vendor/amlogic/g12-common/proprietary/vendor/etc/bluetooth/blacklist.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/blacklist.conf \
     vendor/amlogic/g12-common/proprietary/vendor/etc/drm/playready/bgroupcert.dat:$(TARGET_COPY_OUT_VENDOR)/etc/drm/playready/bgroupcert.dat \
     vendor/amlogic/g12-common/proprietary/vendor/etc/drm/playready/zgpriv.dat:$(TARGET_COPY_OUT_VENDOR)/etc/drm/playready/zgpriv.dat \
@@ -105,35 +90,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/etc/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
     vendor/amlogic/g12-common/proprietary/vendor/etc/tvconfig/pq/pq.db:$(TARGET_COPY_OUT_VENDOR)/etc/tvconfig/pq/pq.db \
     vendor/amlogic/g12-common/proprietary/vendor/etc/tvconfig/pq/pq_default.ini:$(TARGET_COPY_OUT_VENDOR)/etc/tvconfig/pq/pq_default.ini \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/clm_bcm43751a1_ag.blob:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/clm_bcm43751a1_ag.blob \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm4359c0_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm4359c0_ag.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm4339a0_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm4339a0_ag.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm43436b0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm43436b0.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm43438a0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm43438a0.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm43438a1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm43438a1.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm43455c0_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm43455c0_ag.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm43456c5_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm43456c5_ag.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/config_bcm4356a2_ag.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/config_bcm4356a2_ag.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm4339a0_ag.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm4339a0_ag.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm43436b0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm43436b0.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm43438a0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm43438a0.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm43455c0_ag.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm43455c0_ag.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm43456c5_ag.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm43456c5_ag.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm4356a2_ag.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm4356a2_ag.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm4356a2_ag_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm4356a2_ag_apsta.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm4356a2_ag_p2p.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm4356a2_ag_p2p.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm4358u_ag.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm4358u_ag.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm4359c0_ag.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm4359c0_ag.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/fw_bcm43751a1_ag.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/fw_bcm43751a1_ag.bin \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/nvram_ap6212.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/nvram_ap6212.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/nvram_ap6236.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/nvram_ap6236.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/nvram_ap6255.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/nvram_ap6255.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/nvram_ap6256.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/nvram_ap6256.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/nvram_ap6271s.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/nvram_ap6271s.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/nvram_ap62x8.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/nvram_ap62x8.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/nvram_ap6335.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/nvram_ap6335.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/nvram_ap6356.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/nvram_ap6356.txt \
-    vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/buildin/nvram_ap6398s.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/buildin/nvram_ap6398s.txt \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/amlogic/g12-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/amlogic/g12-common/proprietary/vendor/lib/android.hardware.graphics.composer@2.1-resources-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.1-resources-vendor.so \
