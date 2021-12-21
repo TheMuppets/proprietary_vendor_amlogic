@@ -6,3 +6,5 @@ newfstatat: 1
 getrlimit: 1
 sched_setscheduler: 1
 recvfrom: 1
+readlink: 1
+stat64: 1

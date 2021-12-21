@@ -46,6 +46,18 @@ on init
     chmod 0666 /sys/class/video/crop
     chown media system /sys/class/video/crop
 
+    chmod 0666 /sys/class/video/hdmin_delay_duration
+    chown media system /sys/class/video/hdmin_delay_duration
+
+    chmod 0666 /sys/class/video/vframe_walk_delay
+    chown media system /sys/class/video/vframe_walk_delay
+
+    chmod 0666 /sys/class/video/hdmin_delay_max_ms
+    chown media system /sys/class/video/hdmin_delay_max_ms
+
+    chmod 0666 /sys/class/video/hdmin_delay_start
+    chown media system /sys/class/video/hdmin_delay_start
+
     #tsync
     chmod 0664 /sys/class/tsync/pcr_recover
     chown media system /sys/class/tsync/pcr_recover
@@ -147,9 +159,74 @@ on init
     chmod 0664 /sys/class/graphics/fb0/osd_afbcd
     chown system system /sys/class/graphics/fb0/osd_afbcd
 
+    chmod 0664 /sys/class/graphics/fb0/free_fb_mem
+    chown system graphics /sys/class/graphics/fb0/free_fb_mem
+    chmod 0664 /sys/class/graphics/fb0/force_free_mem
+    chown system graphics /sys/class/graphics/fb0/force_free_mem
+
     #ppmgr
     chmod 0664 /sys/class/ppmgr/angle
     chown media system /sys/class/ppmgr/angle
+
+    chmod 0664 /sys/module/amdolby_vision/parameters/dolby_vision_status
+    chown system system /sys/module/amdolby_vision/parameters/dolby_vision_status
+    chmod 0664 /sys/module/aml_media/parameters/dolby_vision_status
+    chown system system /sys/module/aml_media/parameters/dolby_vision_status
+
+    chmod 0664 /sys/module/amdolby_vision/parameters/dolby_vision_policy
+    chown system system /sys/module/amdolby_vision/parameters/dolby_vision_policy
+    chmod 0664 /sys/module/aml_media/parameters/dolby_vision_policy
+    chown system system /sys/module/aml_media/parameters/dolby_vision_policy
+
+    chmod 0664 /sys/module/amdolby_vision/parameters/dolby_vision_hdr10_policy
+    chown system system /sys/module/amdolby_vision/parameters/dolby_vision_hdr10_policy
+    chmod 0664 /sys/module/aml_media/parameters/dolby_vision_hdr10_policy
+    chown system system /sys/module/aml_media/parameters/dolby_vision_hdr10_policy
+
+    chmod 0664 /sys/module/amdolby_vision/parameters/dolby_vision_enable
+    chown system system /sys/module/amdolby_vision/parameters/dolby_vision_enable
+    chmod 0664 /sys/module/aml_media/parameters/dolby_vision_enable
+    chown system system /sys/module/aml_media/parameters/dolby_vision_enable
+
+    chmod 0664 /sys/module/amdolby_vision/parameters/dolby_vision_graphics_priority
+    chown system system /sys/module/amdolby_vision/parameters/dolby_vision_graphics_priority
+    chmod 0664 /sys/module/aml_media/parameters/dolby_vision_graphics_priority
+    chown system system /sys/module/aml_media/parameters/dolby_vision_graphics_priority
+
+    chmod 0664 /sys/module/amdolby_vision/parameters/dolby_vision_ll_policy
+    chown system system /sys/module/amdolby_vision/parameters/dolby_vision_ll_policy
+    chmod 0664 /sys/module/aml_media/parameters/dolby_vision_ll_policy
+    chown system system /sys/module/aml_media/parameters/dolby_vision_ll_policy
+
+    chmod 0664 /sys/class/amdolby_vision/dv_mode
+    chown system system /sys/class/amdolby_vision/dv_mode
+
+    chmod 0664 /sys/module/am_vecm/parameters/hdr_policy
+    chown system system /sys/module/am_vecm/parameters/hdr_policy
+    chmod 0664 /sys/module/aml_media/parameters/hdr_policy
+    chown system system /sys/module/aml_media/parameters/hdr_policy
+
+    chmod 0664 /sys/module/am_vecm/parameters/hdr_mode
+    chown system system /sys/module/am_vecm/parameters/hdr_mode
+    chmod 0664 /sys/module/aml_media/parameters/hdr_mode
+    chown system system /sys/module/aml_media/parameters/hdr_mode
+
+    chmod 0664 /sys/module/am_vecm/parameters/sdr_mode
+    chown system system /sys/module/am_vecm/parameters/sdr_mode
+    chmod 0664 /sys/module/aml_media/parameters/sdr_mode
+    chown system system /sys/module/aml_media/parameters/sdr_mode
+
+    chmod 0664 /sys/class/amhdmitx/amhdmitx0/attr
+    chown system system /sys/class/amhdmitx/amhdmitx0/attr
+
+    chmod 0664 /sys/class/amhdmitx/amhdmitx0/dv_cap
+    chown system system /sys/class/amhdmitx/amhdmitx0/dv_cap
+
+    chmod 0664 /sys/class/amhdmitx/amhdmitx0/hdr_cap
+    chown system system /sys/class/amhdmitx/amhdmitx0/hdr_cap
+
+    chmod 0664 /sys/devices/virtual/amhdmitx/amhdmitx0/avmute
+    chown system system /sys/devices/virtual/amhdmitx/amhdmitx0/avmute
 
 on boot
     chmod 0664 /sys/class/mpgpu/scale_mode

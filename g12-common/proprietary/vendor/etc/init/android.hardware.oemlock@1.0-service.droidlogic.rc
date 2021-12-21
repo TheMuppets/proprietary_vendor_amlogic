@@ -1,5 +1,0 @@
-service vendor.oemlock-1-0 /vendor/bin/hw/android.hardware.oemlock@1.0-service.droidlogic
-    class hal
-    user system
-    group system
-    interface android.hardware.oemlock@1.0::IOemLock default

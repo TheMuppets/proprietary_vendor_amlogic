@@ -17,7 +17,7 @@
 #
 
 key 116   POWER
-key 217   ASSIST
+key 217   VOICE_ASSIST
 
 key 103   DPAD_UP
 key 108   DPAD_DOWN

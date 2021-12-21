@@ -8,4 +8,7 @@ epoll_ctl: 1
 epoll_pwait: 1
 _llseek: 1
 uname: 1
+readlink: 1
+open: 1
+stat64: 1
 

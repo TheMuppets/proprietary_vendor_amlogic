@@ -20,4 +20,9 @@
     <allow-in-power-save package="com.google.android.apps.mediashell" />
     <!-- Per go/opa-reqs , b/67371544 -->
     <feature name="com.google.android.feature.GLOBAL_ASSIST_TRIGGERING" />
+    <!--Enable Mediashell to use the Bugreport API -->
+    <bugreport-whitelisted package="com.google.android.apps.mediashell" />
+
+    <!-- Enable Katniss to handle intents for the Assistant domain. -->
+    <app-link package="com.google.android.katniss" />
 </config>

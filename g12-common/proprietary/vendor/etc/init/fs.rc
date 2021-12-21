@@ -3,18 +3,24 @@ on property:sys.boot_completed=1
    swapon_all /vendor/etc/fstab.amlogic
 
 on fs
-    mkdir /mnt/vendor/factory 0755 root root
-    mkdir /mnt/vendor/tee 0700 system system
     mount_all /vendor/etc/fstab.amlogic
     setprop ro.crypto.fuse_sdcard true
 
     restorecon_recursive /mnt/vendor/param
+
+    verity_update_state
 
 on post-fs-data
     mkdir /data/vendor/wifi 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     # we will remap this as /storage/sdcard0 with the sdcard fuse tool
     mkdir /data/vendor/cas 0700 root root
+    #for wvcas
+    mkdir /data/vendor/mediacas 0770 media mediadrm
+
+    #for irdeto
+    mkdir /data/vendor/irdeto 0770 system system
+    chmod 0666 /dev/bl40
 
     # Set indication (checked by vold) that we have finished this action
     setprop vold.post_fs_data_done 1

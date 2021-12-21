@@ -6,21 +6,57 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "droidlogic-res",
+	name: "Adt3LauncherCustomization",
 	owner: "amlogic",
-	apk: "proprietary/vendor/priv-app/droidlogic-res/droidlogic-res.apk",
+	apk: "proprietary/product/priv-app/Adt3LauncherCustomization/Adt3LauncherCustomization.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	soc_specific: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "Adt3SuwCustomization",
+	owner: "amlogic",
+	apk: "proprietary/product/priv-app/Adt3SuwCustomization/Adt3SuwCustomization.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DfuService",
+	owner: "amlogic",
+	apk: "proprietary/product/priv-app/DfuService/DfuService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 }
 
 android_app_import {
 	name: "DeadpoolServiceBtServices",
 	owner: "amlogic",
 	apk: "proprietary/system_ext/priv-app/DeadpoolServiceBtServices/DeadpoolServiceBtServices.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "droidlogic-res",
+	owner: "amlogic",
+	apk: "proprietary/system_ext/priv-app/droidlogic-res/droidlogic-res.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -37,9 +73,9 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.dumpstate@1.0-service.droidlogic",
+	name: "android.hardware.dumpstate@1.1-service.droidlogic",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.dumpstate@1.0-service.droidlogic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.droidlogic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -55,9 +91,18 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.oemlock@1.0-service.droidlogic",
+	name: "android.hardware.health@2.1-servcie.droidlogic",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.oemlock@1.0-service.droidlogic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1-servcie.droidlogic.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.power-service",
+	owner: "amlogic",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.power-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -73,18 +118,36 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.usb.gadget@1.1-service.droidlogic",
+	name: "android.hardware.usb.gadget@1.2-service.droidlogic",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb.gadget@1.1-service.droidlogic.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb.gadget@1.2-service.droidlogic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine",
+	name: "manifest_android.hardware.drm@1.4-service.playready",
 	owner: "amlogic",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.playready.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.4-service.widevine",
+	owner: "amlogic",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.security.keymint-service.amlogic",
+	owner: "amlogic",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service.amlogic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
