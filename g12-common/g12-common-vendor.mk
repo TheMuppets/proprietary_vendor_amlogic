@@ -184,6 +184,7 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libvideotunnel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideotunnel.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/mediacas/libwvmediacas.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediacas/libwvmediacas.so \
+    vendor/amlogic/g12-common/proprietary/vendor/lib/modules/amlogic_fbc_lib.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/amlogic_fbc_lib.ko \
     vendor/amlogic/g12-common/proprietary/vendor/lib/soundfx/libavl.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libavl.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/soundfx/libbalance.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbalance.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/soundfx/libdbx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdbx.so \
