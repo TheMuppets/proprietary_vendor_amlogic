@@ -164,7 +164,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libmeson_display_service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmeson_display_service.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libms12api_v24.so:$(TARGET_COPY_OUT_VENDOR)/lib/libms12api_v24.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libnano.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnano.so \
-    vendor/amlogic/g12-common/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libomx_av_core_alt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_av_core_alt.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libomx_clock_utils_alt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_clock_utils_alt.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libomx_framework_alt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libomx_framework_alt.so \
