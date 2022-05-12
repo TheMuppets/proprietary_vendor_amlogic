@@ -23,13 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/product/etc/sysconfig/google-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
     vendor/amlogic/g12-common/proprietary/product/etc/sysconfig/google-lineage.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-lineage.xml \
     vendor/amlogic/g12-common/proprietary/product/etc/sysconfig/google_atv.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google_atv.xml \
-    vendor/amlogic/g12-common/proprietary/product/media/audio/alarms/Alarm_Beep_02.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Alarm_Beep_02.ogg \
-    vendor/amlogic/g12-common/proprietary/product/media/audio/ui/Effect_Tick.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Effect_Tick.ogg \
-    vendor/amlogic/g12-common/proprietary/product/media/audio/ui/KeypressDelete.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressDelete.ogg \
-    vendor/amlogic/g12-common/proprietary/product/media/audio/ui/KeypressInvalid.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressInvalid.ogg \
-    vendor/amlogic/g12-common/proprietary/product/media/audio/ui/KeypressReturn.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressReturn.ogg \
-    vendor/amlogic/g12-common/proprietary/product/media/audio/ui/KeypressSpacebar.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressSpacebar.ogg \
-    vendor/amlogic/g12-common/proprietary/product/media/audio/ui/KeypressStandard.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/KeypressStandard.ogg \
     vendor/amlogic/g12-common/proprietary/system/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
     vendor/amlogic/g12-common/proprietary/system_ext/bin/blur_sysprop_notifier:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/blur_sysprop_notifier \
     vendor/amlogic/g12-common/proprietary/system_ext/bin/param_set:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/param_set \
