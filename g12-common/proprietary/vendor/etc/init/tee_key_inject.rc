@@ -1,0 +1,9 @@
+on property:vold.post_fs_data_done=1
+	start vendor.key_inject
+	setprop vendor.tee_key_inject 1
+
+service vendor.key_inject /vendor/bin/tee_key_inject -p /mnt/vendor/factory
+	oneshot
+	user root
+	group system
+	seclabel u:r:tee:s0
