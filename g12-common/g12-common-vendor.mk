@@ -218,6 +218,8 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.playready:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.playready \
     vendor/amlogic/g12-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service.amlogic:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service.amlogic \
     vendor/amlogic/g12-common/proprietary/vendor/bin/tee-supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/tee-supplicant \
+    vendor/amlogic/g12-common/proprietary/vendor/bin/tee_hdcp:$(TARGET_COPY_OUT_VENDOR)/bin/tee_hdcp \
+    vendor/amlogic/g12-common/proprietary/vendor/bin/tee_key_inject:$(TARGET_COPY_OUT_VENDOR)/bin/tee_key_inject \
     vendor/amlogic/g12-common/proprietary/vendor/bin/tee_preload_fw:$(TARGET_COPY_OUT_VENDOR)/bin/tee_preload_fw \
     vendor/amlogic/g12-common/proprietary/vendor/etc/drm/playready/bgroupcert.dat:$(TARGET_COPY_OUT_VENDOR)/etc/drm/playready/bgroupcert.dat \
     vendor/amlogic/g12-common/proprietary/vendor/etc/drm/playready/zgpriv.dat:$(TARGET_COPY_OUT_VENDOR)/etc/drm/playready/zgpriv.dat \
@@ -225,6 +227,8 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.playready.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.playready.rc \
     vendor/amlogic/g12-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.amlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.amlogic.rc \
     vendor/amlogic/g12-common/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
+    vendor/amlogic/g12-common/proprietary/vendor/etc/init/tee_hdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_hdcp.rc \
+    vendor/amlogic/g12-common/proprietary/vendor/etc/init/tee_key_inject.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_key_inject.rc \
     vendor/amlogic/g12-common/proprietary/vendor/etc/init/tee_preload_fw.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_preload_fw.rc \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libplayready.so:$(TARGET_COPY_OUT_VENDOR)/lib/libplayready.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libplayreadymediadrmplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libplayreadymediadrmplugin.so \

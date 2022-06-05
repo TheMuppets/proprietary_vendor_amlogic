@@ -1,0 +1,8 @@
+on property:vendor.tee_key_inject=1 && property:init.svc.vendor.key_inject=stopped
+	start tee_hdcp
+
+service tee_hdcp /vendor/bin/tee_hdcp
+	oneshot
+	user root
+	group system
+	seclabel u:r:tee:s0
