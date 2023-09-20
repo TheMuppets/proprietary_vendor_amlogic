@@ -1,0 +1,43 @@
+{
+   "resman_config": [
+   {
+       "name": "vfm_default",
+       "type": 1,
+       "args": "avail:1"
+   },
+   {
+       "name": "amvideo",
+       "type": 1,
+       "args": "avail:1"
+   },
+   {
+       "name": "videopip",
+       "type": 1,
+       "args": "avail:1"
+   },
+   {
+       "name": "tvp",
+       "type": 3
+   },
+   {
+       "name": "tsparser",
+       "type": 1,
+       "args": "avail:1"
+   },
+   {
+       "name": "codec_mm",
+       "type": 4,
+       "args": "total:0"
+   },
+   {
+       "name": "adc_pll",
+       "type": 1,
+       "args": "avail:1"
+   },
+   {
+       "name": "decoder",
+       "type": 1,
+       "args": "avail:9"
+   }
+   ]
+}

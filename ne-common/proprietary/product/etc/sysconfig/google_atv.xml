@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- These are configurations that must exist on all Android TV devices. -->
+<config>
+    <!-- Cast Receiver must be alive while device is idle for Wake on Cast. -->
+    <allow-in-power-save package="com.google.android.apps.mediashell" />
+    <!-- Per go/opa-reqs , b/67371544 -->
+    <feature name="com.google.android.feature.GLOBAL_ASSIST_TRIGGERING" />
+    <!--Enable Mediashell to use the Bugreport API -->
+    <bugreport-whitelisted package="com.google.android.apps.mediashell" />
+    <!-- Enable Mediashell so this device can act as a Google Cast receiver. -->
+    <feature name="com.google.android.software.cast_receiver" />
+
+    <!-- Enable Katniss to handle intents for the Assistant domain. -->
+    <app-link package="com.google.android.katniss" />
+    <!-- Enable TvLauncherX to handle intents for surveys in the Google domain. -->
+    <app-link package="com.google.android.apps.tv.launcherx" />
+</config>

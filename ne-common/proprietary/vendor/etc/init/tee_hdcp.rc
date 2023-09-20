@@ -1,0 +1,9 @@
+on property:vendor.tee_key_inject=1 && property:init.svc.vendor.key_inject=stopped
+	start vendor.tee_hdcp
+	setprop vendor.after_tee_hdcp 1
+
+service vendor.tee_hdcp /vendor/bin/tee_hdcp -i /vendor/etc/firmware/hdcp_rx22/firmware.le -o /mnt/vendor/param/firmware.le
+	oneshot
+	user root
+	group system
+	seclabel u:r:tee:s0

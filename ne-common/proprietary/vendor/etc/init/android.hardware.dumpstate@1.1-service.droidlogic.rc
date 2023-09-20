@@ -1,0 +1,55 @@
+on property:sys.boot_completed=1
+    chown root system /sys/class/lcd/debug
+    chmod 0664 /sys/class/lcd/debug
+
+    chown root system /sys/class/graphics/fb0/debug
+    chmod 0664 /sys/class/graphics/fb0/debug
+
+    chown root system /sys/module/amvideo/parameters/debug_flag
+    chmod 0664 /sys/module/amvideo/parameters/debug_flag
+
+    chown root system /sys/kernel/debug/aml_reg/dump
+    chmod 0664 /sys/kernel/debug/aml_reg/dump
+
+    chown root system /sys/kernel/debug/aml_reg/paddr
+    chmod 0664 /sys/kernel/debug/aml_reg/paddr
+
+    chown root system /sys/class/amhdmitx/amhdmitx0/debug
+    chmod 0220 /sys/class/amhdmitx/amhdmitx0/debug
+
+    chown root system /sys/class/amhdmitx/amhdmitx0/edid
+    chmod 0664 /sys/class/amhdmitx/amhdmitx0/edid
+
+    chown root system /sys/class/deinterlace/di0/debug
+    chmod 0220 /sys/class/deinterlace/di0/debug
+
+    chown root system /sys/class/vdin/vdin0/attr
+    chmod 0664 /sys/class/vdin/vdin0/attr
+
+    chown root system /sys/class/vdin/vdin1/attr
+    chmod 0664 /sys/class/vdin/vdin1/attr
+
+    chown root system /sys/class/vdin/vdin0/vf_log
+    chmod 0664 /sys/class/vdin/vdin0/vf_log
+
+    chown root system /sys/class/hdmirx/hdmirx0/debug
+    chmod 0664 /sys/class/hdmirx/hdmirx0/debug
+
+    chown root system /sys/class/tvafe/tvafe0/reg
+    chmod 0664 /sys/class/tvafe/tvafe0/reg
+
+    #dmc related sysfs
+    chown root system /sys/class/dmc_monitor/range
+    chmod 0664 /sys/class/dmc_monitor/range
+
+    chown root system /sys/class/dmc_monitor/device
+    chmod 0664 /sys/class/dmc_monitor/device
+
+service vendor.dumpstate-1-1 /vendor/bin/hw/android.hardware.dumpstate@1.1-service.droidlogic
+    class hal
+    user system
+    group system
+    interface android.hardware.dumpstate@1.0::IDumpstateDevice default
+    interface android.hardware.dumpstate@1.1::IDumpstateDevice default
+    oneshot
+    disabled
