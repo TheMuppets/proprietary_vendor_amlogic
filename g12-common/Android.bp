@@ -6,54 +6,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "Adt3LauncherCustomization",
-	owner: "amlogic",
-	apk: "proprietary/product/priv-app/Adt3LauncherCustomization/Adt3LauncherCustomization.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "Adt3SuwCustomization",
-	owner: "amlogic",
-	apk: "proprietary/product/priv-app/Adt3SuwCustomization/Adt3SuwCustomization.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "DfuService",
-	owner: "amlogic",
-	apk: "proprietary/product/priv-app/DfuService/DfuService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "DeadpoolServiceBtServices",
-	owner: "amlogic",
-	apk: "proprietary/system_ext/priv-app/DeadpoolServiceBtServices/DeadpoolServiceBtServices.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "droidlogic-res",
 	owner: "amlogic",
 	apk: "proprietary/system_ext/priv-app/droidlogic-res/droidlogic-res.apk",
@@ -133,6 +85,54 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
+}
+
+android_app_import {
+        name: "Adt3LauncherCustomization",
+        owner: "amlogic",
+        apk: "proprietary/product/priv-app/Adt3LauncherCustomization/Adt3LauncherCustomization.apk",
+        certificate: "platform",
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+        product_specific: true,
+}
+
+android_app_import {
+        name: "Adt3SuwCustomization",
+        owner: "amlogic",
+        apk: "proprietary/product/priv-app/Adt3SuwCustomization/Adt3SuwCustomization.apk",
+        certificate: "platform",
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+        product_specific: true,
+}
+
+android_app_import {
+        name: "DfuService",
+        owner: "amlogic",
+        apk: "proprietary/product/priv-app/DfuService/DfuService.apk",
+        certificate: "platform",
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+        product_specific: true,
+}
+
+android_app_import {
+        name: "DeadpoolServiceBtServices",
+        owner: "amlogic",
+        apk: "proprietary/system_ext/priv-app/DeadpoolServiceBtServices/DeadpoolServiceBtServices.apk",
+        certificate: "platform",
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+        system_ext_specific: true,
 }
 
 prebuilt_etc_xml {
