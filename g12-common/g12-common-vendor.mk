@@ -110,7 +110,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/g12-common/proprietary/vendor/lib/hw/hwcomposer.amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.amlogic.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/hw/memtrack.amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.amlogic.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/hw/screen_source.amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/screen_source.amlogic.so \
-    vendor/amlogic/g12-common/proprietary/vendor/lib/hw/vulkan.amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.amlogic.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libAmlAudioOutPort.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAmlAudioOutPort.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libOmxAudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAudio.so \
     vendor/amlogic/g12-common/proprietary/vendor/lib/libOmxBase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxBase.so \
