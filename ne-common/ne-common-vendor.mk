@@ -7,20 +7,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/odm/etc/firmware/firmware.le:$(TARGET_COPY_OUT_ODM)/etc/firmware/firmware.le \
-    vendor/amlogic/ne-common/proprietary/product/etc/permissions/com.google.android.tv.dfuservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.tv.dfuservice.xml \
-    vendor/amlogic/ne-common/proprietary/product/etc/permissions/privapp-permissions-atv-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-atv-product.xml \
-    vendor/amlogic/ne-common/proprietary/product/etc/permissions/privapp-permissions-deadpool.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-deadpool.xml \
-    vendor/amlogic/ne-common/proprietary/product/etc/permissions/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-p.xml \
-    vendor/amlogic/ne-common/proprietary/product/etc/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml \
-    vendor/amlogic/ne-common/proprietary/product/etc/sysconfig/google-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
-    vendor/amlogic/ne-common/proprietary/product/etc/sysconfig/google-lineage.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-lineage.xml \
-    vendor/amlogic/ne-common/proprietary/product/etc/sysconfig/google_atv.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google_atv.xml \
     vendor/amlogic/ne-common/proprietary/recovery/root/sbin/mesondisplay.cfg:$(TARGET_COPY_OUT_RECOVERY)/root/sbin/mesondisplay.cfg \
     vendor/amlogic/ne-common/proprietary/recovery/root/system/bin/systemcontrol_static:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/systemcontrol_static \
     vendor/amlogic/ne-common/proprietary/recovery/root/system/lib/hw/android.hardware.boot@1.0-impl-1.2.droidlogic.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib/hw/android.hardware.boot@1.0-impl-1.2.droidlogic.so \
     vendor/amlogic/ne-common/proprietary/recovery/root/system/lib/hw/android.hardware.fastboot@1.0-impl-amlogic.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib/hw/android.hardware.fastboot@1.0-impl-amlogic.so \
-    vendor/amlogic/ne-common/proprietary/system/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
-    vendor/amlogic/ne-common/proprietary/system_ext/etc/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml \
     vendor/amlogic/ne-common/proprietary/system_ext/lib/libsubtitlebinder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsubtitlebinder.so \
     vendor/amlogic/ne-common/proprietary/system_ext/lib/libsubtitlemanager_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsubtitlemanager_jni.so \
     vendor/amlogic/ne-common/proprietary/system_ext/lib/vendor.amlogic.hardware.subtitleserver@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.amlogic.hardware.subtitleserver@1.0.so \
@@ -119,7 +109,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/lib/hw/hdmi_cec.amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hdmi_cec.amlogic.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/hw/hwcomposer.amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.amlogic.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/hw/screen_source.amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/screen_source.amlogic.so \
-    vendor/amlogic/ne-common/proprietary/vendor/lib/hw/vulkan.amlogic.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.amlogic.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libAmlAudioOutPort.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAmlAudioOutPort.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libOmxAudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAudio.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/libOmxBase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxBase.so \
@@ -218,9 +207,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/lib/modules/amlogic_fbc_lib.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/amlogic_fbc_lib.ko
 
 PRODUCT_PACKAGES += \
-    Adt3LauncherCustomization \
-    DeadpoolService \
-    DfuService \
     droidlogic.software.core \
     android.hardware.boot@1.2.droidlogic \
     android.hardware.dumpstate@1.1-service.droidlogic \
@@ -235,6 +221,22 @@ PRODUCT_PACKAGES += \
     memtrack-amlogic \
     vendor.amlogic.hardware.screencontrol@1.0 \
     vendor.amlogic.hardware.subtitleserver@1.0
+
+ifeq ($(PRODUCT_IS_ATV),true)
+PRODUCT_COPY_FILES += \
+    vendor/amlogic/ne-common/proprietary/product/etc/permissions/com.google.android.tv.dfuservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.tv.dfuservice.xml \
+    vendor/amlogic/ne-common/proprietary/product/etc/permissions/privapp-permissions-atv-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-atv-product.xml \
+    vendor/amlogic/ne-common/proprietary/product/etc/permissions/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-p.xml \
+    vendor/amlogic/ne-common/proprietary/product/etc/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml \
+    vendor/amlogic/ne-common/proprietary/product/etc/sysconfig/google-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
+    vendor/amlogic/ne-common/proprietary/product/etc/sysconfig/google-lineage.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-lineage.xml \
+    vendor/amlogic/ne-common/proprietary/product/etc/sysconfig/google_atv.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google_atv.xml \
+    vendor/amlogic/ne-common/proprietary/system/etc/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
+    vendor/amlogic/ne-common/proprietary/system_ext/etc/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml
+
+PRODUCT_PACKAGES += \
+    DfuService
+endif
 
 ifneq ($(TARGET_HAS_TEE),false)
 PRODUCT_COPY_FILES += \
