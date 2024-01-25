@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),odroidc4)
+ifneq ($(filter odroidc4 odroidc4_tab,$(TARGET_DEVICE)),)
 
 RADIO_FILES := $(wildcard $(LOCAL_PATH)/radio/*)
 $(foreach f, $(notdir $(RADIO_FILES)), \

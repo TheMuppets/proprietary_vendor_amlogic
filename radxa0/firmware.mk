@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),radxa0)
+ifneq ($(filter radxa0 radxa0_tab,$(TARGET_DEVICE)),)
 
 RADIO_FILES := $(wildcard $(LOCAL_PATH)/radio/*)
 $(foreach f, $(notdir $(RADIO_FILES)), \
